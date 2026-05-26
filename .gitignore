@@ -1,0 +1,5 @@
+KiwifyBankingDemo/AppConfig.swift
+*.xcuserstate
+xcuserdata/
+.DS_Store
+DerivedData/

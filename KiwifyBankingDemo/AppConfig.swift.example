@@ -1,0 +1,15 @@
+import Foundation
+
+// 1. Copy this file to AppConfig.swift
+// 2. Fill in your credentials
+// 3. Never commit AppConfig.swift (it is gitignored)
+enum AppConfig {
+    static let apiHost: URL = {
+        guard let url = URL(string: "https://example-api-kiwify.api.com") else {
+            fatalError("AppConfig: invalid API host URL")
+        }
+        return url
+    }()
+    static let apiToken = "<YOUR_API_TOKEN>"
+    static let origin   = "https://subdomain.domain.com"
+}
